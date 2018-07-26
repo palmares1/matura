@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Button, Form, FormGroup } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 const NewTest = (props) => {
@@ -9,34 +9,19 @@ const NewTest = (props) => {
           <h4>Materiały / Testy / Nowy Test</h4>
           <div className="container text-center">
               <Button tag={Link} to="#" color="success">Zapisz</Button>{' '}  
+              <Button tag={Link} to="#" color="danger">Anuluj</Button>
           </div>
     </div>
     <div className="container">
     <Form>
         <FormGroup tag="fieldset">
-          <legend>Czy zdążymy z inżynierką do 20 sierpnia?</legend>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="radio1" />{' '}
-              Spoko
-            </Label>
-          </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="radio2" />{' '}
-              Oczywiście
-            </Label>
-          </FormGroup>
-          <FormGroup check>
-            <Label check>
-              <Input type="radio" name="radio3" />{' '}
-              Nie widzę problemu
-            </Label>
-          </FormGroup>
+          <legend>Tu będą testy</legend>
+          
           
         </FormGroup>
         
-        <Button tag={Link} to="#" color="success">Zapisz</Button>
+        <Button tag={Link} to="#" color="success">Zapisz</Button>{' '}
+        <Button tag={Link} to="#" color="danger">Anuluj</Button>
       </Form>
     </div>
     </div>
